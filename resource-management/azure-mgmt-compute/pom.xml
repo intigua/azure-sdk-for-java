@@ -28,7 +28,7 @@
 
   <name>Intigua fork of Microsoft Azure SDK for Compute Management</name>
   <description>This package contains Microsoft Azure Compute Management SDK.</description>
-  <url>https://github.com/noaml2gitHub/azure-sdk-for-java.git</url>
+  <url>https://github.com/noaml2gitHub/azure-sdk-for-java</url>
 
   <licenses>
     <license>
