@@ -17,16 +17,18 @@
   <parent>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure</artifactId>
-    <version>0.9.4-SNAPSHOT</version>
+    <version>0.9.3</version>
     <relativePath>../../azure/pom.xml</relativePath>
   </parent>
 
-  <artifactId>azure-mgmt-compute</artifactId>
+  <groupId>com.intigua.azure</groupId>
+  <artifactId>intigua-azure-mgmt-compute</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Microsoft Azure SDK for Compute Management</name>
+  <name>Intigua fork of Microsoft Azure SDK for Compute Management</name>
   <description>This package contains Microsoft Azure Compute Management SDK.</description>
-  <url>https://github.com/Azure/azure-sdk-for-java</url>
+  <url>https://github.com/noaml2gitHub/azure-sdk-for-java.git</url>
 
   <licenses>
     <license>
@@ -56,9 +58,9 @@
 
   <dependencies>
     <dependency> 
-      <groupId>${project.groupId}</groupId>
+      <groupId>${project.parent.groupId}</groupId>
       <artifactId>azure-core</artifactId>
-      <version>${project.version}</version>
+      <version>${project.parent.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
