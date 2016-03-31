@@ -165,22 +165,22 @@
 
   <build>
     <plugins>
-      <!--<plugin>-->
-        <!--<groupId>org.apache.maven.plugins</groupId>-->
-        <!--<artifactId>maven-help-plugin</artifactId>-->
-        <!--<version>2.1.1</version>-->
-        <!--<executions>-->
-          <!--<execution>-->
-            <!--<phase>validate</phase>-->
-            <!--<goals>-->
-              <!--<goal>evaluate</goal>-->
-            <!--</goals>-->
-            <!--<configuration>-->
-              <!--<expression>legal</expression>-->
-            <!--</configuration>-->
-          <!--</execution>-->
-        <!--</executions>-->
-      <!--</plugin>-->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-help-plugin</artifactId>
+        <version>2.1.1</version>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>evaluate</goal>
+            </goals>
+            <configuration>
+              <expression>legal</expression>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -195,29 +195,29 @@
         </configuration>
       </plugin>
 
-      <!--<plugin>-->
-        <!--<groupId>org.apache.maven.plugins</groupId>-->
-        <!--<artifactId>maven-javadoc-plugin</artifactId>-->
-        <!--<version>2.8</version>-->
-        <!--<configuration>-->
-          <!--<additionalparam>-Xdoclint:none</additionalparam>-->
-          <!--<excludePackageNames>*.implementation.*;*.utils.*;com.microsoft.schemas._2003._10.serialization;*.blob.core.storage</excludePackageNames>-->
-          <!--<bottom><![CDATA[<code>/**-->
-<!--<br />* Copyright Microsoft Corporation-->
-<!--<br />*-->
-<!--<br />* Licensed under the Apache License, Version 2.0 (the "License");-->
-<!--<br />* you may not use this file except in compliance with the License.-->
-<!--<br />* You may obtain a copy of the License at-->
-<!--<br />* http://www.apache.org/licenses/LICENSE-2.0-->
-<!--<br />*-->
-<!--<br />* Unless required by applicable law or agreed to in writing, software-->
-<!--<br />* distributed under the License is distributed on an "AS IS" BASIS,-->
-<!--<br />* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.-->
-<!--<br />* See the License for the specific language governing permissions and-->
-<!--<br />* limitations under the License.-->
-<!--<br />*/</code>]]></bottom>-->
-        <!--</configuration>-->
-      <!--</plugin>-->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.8</version>
+        <configuration>
+          <additionalparam>-Xdoclint:none</additionalparam>
+          <excludePackageNames>*.implementation.*;*.utils.*;com.microsoft.schemas._2003._10.serialization;*.blob.core.storage</excludePackageNames>
+          <bottom><![CDATA[<code>/**
+<br />* Copyright Microsoft Corporation
+<br />*
+<br />* Licensed under the Apache License, Version 2.0 (the "License");
+<br />* you may not use this file except in compliance with the License.
+<br />* You may obtain a copy of the License at
+<br />* http://www.apache.org/licenses/LICENSE-2.0
+<br />*
+<br />* Unless required by applicable law or agreed to in writing, software
+<br />* distributed under the License is distributed on an "AS IS" BASIS,
+<br />* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+<br />* See the License for the specific language governing permissions and
+<br />* limitations under the License.
+<br />*/</code>]]></bottom>
+        </configuration>
+      </plugin>
 
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -229,7 +229,6 @@
           <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
         </configuration>
       </plugin>
-<!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -252,7 +251,6 @@
           </execution>
         </executions>
       </plugin>
--->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
@@ -262,7 +260,6 @@
     <pluginManagement>
       <plugins>
         <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
-<!--
         <plugin>
           <groupId>org.eclipse.m2e</groupId>
           <artifactId>lifecycle-mapping</artifactId>
@@ -300,7 +297,6 @@
             </lifecycleMappingMetadata>
           </configuration>
         </plugin>
--->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
